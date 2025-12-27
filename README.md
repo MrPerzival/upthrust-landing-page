@@ -20,3 +20,5 @@ Open `index.html` in any modern browser or use Live Server.
 
 ## Purpose
 Created as a frontend practice / assignment project.
+
+Assignment given by upthrust

@@ -1,2 +1,22 @@
-# upthrust-landing-page
-Responsive landing page built with pure HTML and CSS for a D2C growth agency. Features a pill-style navbar, hero section with CTA, animated SVG brand logos, image collage with hover bubbles, and a clean services accordion. Optimized for desktop and mobile.
+# Upthrust Landing Page
+
+A responsive landing page built using **pure HTML and CSS** for a D2C growth agency.
+
+## Features
+- HTML5 & CSS3 only (no frameworks)
+- Responsive design (desktop & mobile)
+- Hero section with CTA
+- Animated SVG brand logos
+- Image collage with hover bubbles
+- Clean and structured code
+
+## Tech Stack
+- HTML
+- CSS
+- Google Fonts (Inter)
+
+## How to Run
+Open `index.html` in any modern browser or use Live Server.
+
+## Purpose
+Created as a frontend practice / assignment project.

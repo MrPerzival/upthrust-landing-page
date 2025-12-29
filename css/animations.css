@@ -1,0 +1,73 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes wheelLoop {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.wheel-column {
+  height: 100%;
+  overflow: hidden;
+}
+
+.wheel-track {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  animation: wheelLoop linear infinite;
+  will-change: transform;
+}
+
+.wheel-track + .wheel-track {
+  margin-top: 22px;
+}
+
+.wheel-column.slow .wheel-track {
+  animation-duration: 22s;
+}
+
+.wheel-column.medium .wheel-track {
+  animation-duration: 16s;
+}
+
+.wheel-column.fast .wheel-track {
+  animation-duration: 12s;
+}
+
+@media (hover: hover) {
+  .wheel-track img {
+    transition: transform 0.25s ease;
+  }
+
+  .wheel-track img:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate,
+  .wheel-track {
+    animation: none;
+  }
+
+  .wheel-track img {
+    transition: none;
+  }
+}
